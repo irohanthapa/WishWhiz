@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+
+}
+
+a {
+  color: rgb(38, 38, 155) !important;
+  text-decoration: none;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+a:hover {
+  color: #000000 !important;
+}
