@@ -19,7 +19,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('/api/v1/auth/register', { username, email, password });
+            await axios.post('https://server-3fxh.onrender.com/api/v1/auth/register', { username, email, password });
             toast.success('User Registered Successfully!');
             navigate('/login');
         } catch (err) {

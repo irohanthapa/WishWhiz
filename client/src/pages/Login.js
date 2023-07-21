@@ -18,7 +18,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("/api/v1/auth/login", { email, password });
+            const response = await axios.post("https://server-3fxh.onrender.com/api/v1/auth/login", { email, password });
             if (response.data.username) {
                 const username = response.data.username;
                 toast.success("Logged in Successfully!");

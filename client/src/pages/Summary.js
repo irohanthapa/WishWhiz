@@ -16,7 +16,7 @@ const Summary = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("/api/v1/openai/summary", { text });
+            const { data } = await axios.post("https://server-3fxh.onrender.com/api/v1/openai/summary", { text });
             setSummary(data);
         } catch (err) {
             console.log(error);

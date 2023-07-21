@@ -16,7 +16,7 @@ const ScifiImage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("/api/v1/openai/sci-image", { text });
+            const { data } = await axios.post("https://server-3fxh.onrender.com/api/v1/openai/sci-image", { text });
             setImage(data);
         } catch (err) {
             console.log(error);
