@@ -55,17 +55,32 @@ const Homepage = () => {
                 </Box>
             </Box>)
             : (
-                <Box textAlign={'center'} p={20}>
-                    <Typography variant='h3' fontWeight={'bold'}>Please Login to use the services</Typography>
-                    <Box display={'flex'} flexDirection={'row'} sx={{ justifyContent: 'center' }}>
-                        <Link to='/login'>
-                            <Button type="submit" variant="contained" size="large" sx={{ color: "white", mt: 2 }}>login</Button>
-                        </Link>
-                        <Link to='/register'>
-                            <Button type="submit" variant="contained" size="large" sx={{ color: "white", mt: 2 }}>register</Button>
-                        </Link>
+                <>
+
+                    <Box textAlign="center" padding={15}>
+                        <Typography variant="h4" fontWeight="bold">
+                            Welcome to Wish-Whiz:
+                        </Typography>
+                        <Typography variant="h4" fontWeight="bold">
+                            Where Wishes Meet Wizardry
+                        </Typography>
+                        <Typography variant="h5">
+                            Unleash AI Magic for Effortless Summaries,
+                        </Typography>
+                        <Typography variant="h5">
+                            Inspiring Content, and Chat with Genie!
+                        </Typography>
+                    
+                        <Box display={'flex'} flexDirection={'row'} sx={{ justifyContent: 'center' }}>
+                            <Link to='/login'>
+                                <Button type="submit" variant="contained" size="large" sx={{ color: "white", mt: -2 }}>login</Button>
+                            </Link>
+                            <Link to='/register'>
+                                <Button type="submit" variant="contained" size="large" sx={{ color: "white", mt: -2 }}>register</Button>
+                            </Link>
+                        </Box>
                     </Box>
-                </Box>
+                </>
             )
     );
 };

@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const JWT = require('jsonwebtoken');
 const cookie = require('cookie');
 
-//models
+//user
 const userSchema = new mongoose.Schema({
     username:{
         type: String,
@@ -18,14 +18,6 @@ const userSchema = new mongoose.Schema({
         type:String,
         required: [true, 'Password is required'],
         minlength: [6, 'Password should be minimum 6 characters long']
-    },
-    customerId:{
-        type: String,
-        default: ""
-    },
-    subscription:{
-        type:String,
-        default: ""
     }
 });
 
