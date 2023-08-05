@@ -40,7 +40,7 @@ const ScifiImage = () => {
                     </Alert>
                 </Collapse>
                 <form onSubmit={handleSubmit}>
-                    <Typography variant="h3">Sci-Fi Image</Typography>
+                    <Typography variant="h3">Imagator</Typography>
                     <TextField placeholder="add your text" multiline={true} type="text" required margin="normal" fullWidth value={text} onChange={(e) => { setText(e.target.value); }} />
                     <Button type="submit" fullWidth variant="contained" size="large" sx={{ color: "white", mt: 2 }}>Submit</Button>
                     <Typography mt={2}>Not this Tool? <Link to="/">Go Back</Link></Typography>

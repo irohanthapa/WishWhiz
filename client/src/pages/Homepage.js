@@ -24,7 +24,7 @@ const Homepage = () => {
                     </Card>
                 </Box>
                 <Box p={2} textAlign={'center'}>
-                    <Typography variant='h5' mb={2} fontWeight={'bold'}>Generate Paragraphs</Typography>
+                    <Typography variant='h5' mb={2} fontWeight={'bold'}>Paragraphs Generator</Typography>
                     <Card onClick={() => navigate("/paragraph")} sx={{ boxShadow: 3, borderRadius: 5, height: 225, width: 225, "&:hover": { border: 2, boxShadow: 0, borderColor: "primary.dark", cursor: "pointer" } }}>
                         <FormatAlignLeftOutlined sx={{ fontSize: 80, color: "primary.main", mt: 2 }} />
                         <Stack p={3} pt={0}>
@@ -38,13 +38,13 @@ const Homepage = () => {
                     <Card onClick={() => navigate("/chatbot")} sx={{ boxShadow: 3, borderRadius: 5, height: 225, width: 225, "&:hover": { border: 2, boxShadow: 0, borderColor: "primary.dark", cursor: "pointer" } }}>
                         <Chat sx={{ fontSize: 80, color: "primary.main", mt: 2 }} />
                         <Stack p={3} pt={0}>
-                            <Typography fontWeight="bold" variant="h6">ChatBot</Typography>
+                            <Typography fontWeight="bold" variant="h6">Genie</Typography>
                             <Typography variant="p">Generate paragraphs with words</Typography>
                         </Stack>
                     </Card>
                 </Box>
                 <Box p={2} textAlign={'center'}>
-                    <Typography variant='h5' mb={2} fontWeight={'bold'}>AI Image Generator</Typography>
+                    <Typography variant='h5' mb={2} fontWeight={'bold'}>Sci-Fi Image Generator</Typography>
                     <Card onClick={() => navigate("/sci-image")} sx={{ boxShadow: 3, borderRadius: 5, height: 225, width: 225, "&:hover": { border: 2, boxShadow: 0, borderColor: "primary.dark", cursor: "pointer" } }}>
                         <Image sx={{ fontSize: 80, color: "primary.main", mt: 2 }} />
                         <Stack p={3} pt={0}>
