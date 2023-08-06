@@ -40,7 +40,7 @@ const ChatBot = () => {
                     </Alert>
                 </Collapse>
                 <form onSubmit={handleSubmit}>
-                    <Typography variant="h3">Ask With ChatBot</Typography>
+                    <Typography variant="h3">Ask Genie</Typography>
                     <TextField placeholder="add your text" multiline={true} type="text" required margin="normal" fullWidth value={text} onChange={(e) => { setText(e.target.value); }} />
                     <Button type="submit" fullWidth variant="contained" size="large" sx={{ color: "white", mt: 2 }}>Chat</Button>
                     <Typography mt={2}>Not this Tool? <Link to="/">Go Back</Link></Typography>
